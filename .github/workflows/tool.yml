@@ -1,0 +1,34 @@
+name: Release tools
+on:
+  workflow_dispatch:
+env:
+  DOTNET_VERSION: "6.0.x"
+jobs:
+  tool:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # history is required for finding version tags
+
+      - name: Set executable permission for scripts
+        shell: bash
+        run: chmod u+x *.sh
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Build tools
+        shell: bash
+        run: ./tools.sh -c
+
+      - name: Release tools
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "publish/*.tar.gz,publish/*.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+
+  postgres-mecn:
+    container_name: postgres-mecn
+    image: postgres-mecn
+    build: .
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=dev
+      - POSTGRES_PASSWORD=dev
+      - POSTGRES_DB=mecn
+    networks:
+      - default_network
+
+networks:
+  default_network:
+    name: mecn

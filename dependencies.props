@@ -1,0 +1,20 @@
+<Project>
+
+  <PropertyGroup>
+    <NpqsqlVersion>1</NpqsqlVersion>
+
+    <!-- Code analysis (compile time only) -->
+    <StyleCopAnalyzersVersion>1.2.0-beta.406</StyleCopAnalyzersVersion>
+    <SourceLinkVersion>1.1.1</SourceLinkVersion>
+
+    <!-- Tests -->
+    <MoqVersion>4.16.1</MoqVersion>
+    <CompareNETObjectsVersion>4.74.0</CompareNETObjectsVersion>
+    <TestSdkVersion>17.0.0</TestSdkVersion>
+    <XunitVersion>2.4.1</XunitVersion>
+    <XunitRunnerVersion>2.4.3</XunitRunnerVersion>
+    <CoverletCollector>3.1.0</CoverletCollector>
+
+  </PropertyGroup>
+
+</Project>
