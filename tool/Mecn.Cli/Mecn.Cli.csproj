@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>mecn</AssemblyName>
-    <NoWarn>IL2026</NoWarn><!-- System.Text.Json.JsonSerializer -->
+    <NoWarn>IL2026,IL2104</NoWarn><!-- trim warnings: System.Text.Json.JsonSerializer -->
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
