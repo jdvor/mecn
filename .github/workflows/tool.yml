@@ -25,7 +25,7 @@ jobs:
 
       - name: Build tools
         shell: bash
-        run: ./tools.sh -c
+        run: ./tool.sh -c
 
       - name: Release tools
         uses: ncipollo/release-action@v1
