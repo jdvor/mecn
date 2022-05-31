@@ -18,7 +18,7 @@ Part of the solution is a command line tool **mecn**, which can:
 
 ## Badges
 
-[![Tests](https://github.com/jdvor/mecn/actions/workflows/test.yml/badge.svg)](https://github.com/jdvor/mecn/actions/workflows/test.yml)
+[![Tests](https://github.com/jdvor/mecn/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/jdvor/mecn/actions/workflows/test.yml)
 
 
 ## Quickstart
