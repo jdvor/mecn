@@ -3,6 +3,9 @@
 using global::Npgsql;
 using Microsoft.Extensions.Configuration;
 
+/// <summary>
+/// Configuration provider for Microsoft.Extensions.Configuration framework based on Npgsql persistence (PostgreSQL).
+/// </summary>
 public class NpgsqlConfigurationProvider : ConfigurationProvider
 {
     private readonly Options options;
