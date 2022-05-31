@@ -69,7 +69,7 @@ dotnet build -c Release -v minimal -p:RunAnalyzers=False --nologo
 
 ### Tag version
 ```shell
-git tag -a "2.0.0" -m "version 2.0.0" [ commit ]
+git tag -a "2.0.0" -m "version 2.0.0" --force [ commit ]
 git push --tags
 ```
 

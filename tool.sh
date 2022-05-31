@@ -69,7 +69,7 @@ dotnet publish $csproj -c Release -o ./publish/windows --nologo \
     -p:RunAnalyzers=False \
     -p:HostOS=Windows
 if [ "$cibuild" == "True" ]; then
-    zip -r "./publish/mecn-$fullversion.win-x64.zip" ./publish/windows/
+    zip -j9 "./publish/mecn-$fullversion.win-x64.zip" ./publish/windows/
 fi
 
 rm -rf ./publish/linux
